@@ -13,20 +13,14 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/"><i className="bi bi-house-door me-1"></i>Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/scan"><i className="bi bi-search me-1"></i>Start Scan</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about"><i className="bi bi-info-circle me-1"></i>About</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact"><i className="bi bi-envelope me-1"></i>Contact</Link>
-            </li>
-          </ul>
+          <div className="ms-auto nav-auth-buttons d-flex align-items-center">
+            <Link to="/signin" className="btn btn-outline-light me-2">
+              <i className="bi bi-box-arrow-in-right me-1"></i>Sign In
+            </Link>
+            <Link to="/register" className="btn btn-primary">
+              <i className="bi bi-person-plus me-1"></i>Register
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
